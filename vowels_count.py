@@ -1,0 +1,32 @@
+# Python3 code to count vowel in
+# a string using set
+
+# Function to count vowel
+def vowel_count(str):
+	
+	# Initializing count variable to 0
+	count = 0
+	
+	# Creating a set of vowels
+	vowel = set("aeiouAEIOU")
+	
+	# Loop to traverse the alphabet
+	# in the given string
+	for i in str:
+	
+		# If i is present
+		# in set vowel
+		if i in vowel:
+			print (i)
+			count = count + 1
+	
+	print("No. of vowels :", count)
+	
+
+str = input("enter the string:")
+
+# Function Call
+vowel_count(str)
+
+
+
